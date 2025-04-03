@@ -1,0 +1,2 @@
+recursive-include ckanext/inferiafrontend/public *
+recursive-include ckanext/inferiafrontend/templates *

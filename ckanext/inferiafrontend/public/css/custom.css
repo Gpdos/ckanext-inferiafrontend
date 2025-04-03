@@ -1,0 +1,21 @@
+/* Cambiar el color de fondo del encabezado */
+header.masthead {
+    background-color: #ff66b2;  /* Rosa claro */
+}
+
+/* Efecto hover en los enlaces dentro del navbar */
+header.masthead .navbar-nav a:hover {
+    background-color: #ff3385;  /* Rosa más oscuro */
+    color: white;  /* Cambiar el color del texto a blanco */
+}
+
+/* Efecto hover en los botones dentro del encabezado */
+header.masthead button:hover {
+    background-color: #ff3385;  /* Rosa más oscuro */
+    color: white;  /* Cambiar el color del texto a blanco */
+}
+
+/* Efecto hover en el logo si es necesario */
+header.masthead .logo:hover img {
+    opacity: 0.8;  /* Efecto de opacidad al pasar el ratón por encima del logo */
+}

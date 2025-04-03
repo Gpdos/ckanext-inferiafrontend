@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+ckanext/__init__.py
+ckanext/inferiafrontend/plugin.py
+ckanext/inferiafrontend/public/webassets.yaml
+ckanext/inferiafrontend/public/css/custom.css
+ckanext/inferiafrontend/templates/layout.html
+ckanext/inferiafrontend/templates/home/index.html
+ckanext/inferiafrontend/templates/snippets/footer.html
+ckanext_inferiafrontend.egg-info/PKG-INFO
+ckanext_inferiafrontend.egg-info/SOURCES.txt
+ckanext_inferiafrontend.egg-info/dependency_links.txt
+ckanext_inferiafrontend.egg-info/entry_points.txt
+ckanext_inferiafrontend.egg-info/namespace_packages.txt
+ckanext_inferiafrontend.egg-info/requires.txt
+ckanext_inferiafrontend.egg-info/top_level.txt

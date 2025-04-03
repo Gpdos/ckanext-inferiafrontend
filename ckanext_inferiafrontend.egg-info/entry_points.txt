@@ -1,0 +1,2 @@
+[ckan.plugins]
+inferiafrontend = ckanext.inferiafrontend.plugin:InferiaFrontendPlugin

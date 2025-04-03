@@ -1,0 +1,1 @@
+# Dependencias necesarias (por ahora vacío si solo se cambian estilos)
