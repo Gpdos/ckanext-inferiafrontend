@@ -1,21 +1,58 @@
-/* Cambiar el color de fondo del encabezado */
-header.masthead {
-    background-color: #ff66b2;  /* Rosa claro */
+/* MASTHEAD STYLING */
+.masthead {
+    background-color: #fea5ba !important;
+    /* rosa pastel */
+    border-bottom: 1px solid #fea5ba;
 }
 
-/* Efecto hover en los enlaces dentro del navbar */
-header.masthead .navbar-nav a:hover {
-    background-color: #ff3385;  /* Rosa más oscuro */
-    color: white;  /* Cambiar el color del texto a blanco */
+.navbar {
+    background-color: transparent !important;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Efecto hover en los botones dentro del encabezado */
-header.masthead button:hover {
-    background-color: #ff3385;  /* Rosa más oscuro */
-    color: white;  /* Cambiar el color del texto a blanco */
+.navbar .nav>li>a {
+    color: #c71585 !important;
+    /* rosa fuerte */
+    font-weight: 600;
+    padding: 1rem;
+    transition: color 0.3s ease;
 }
 
-/* Efecto hover en el logo si es necesario */
-header.masthead .logo:hover img {
-    opacity: 0.8;  /* Efecto de opacidad al pasar el ratón por encima del logo */
+.navbar .nav>li>a:hover {
+    color: #ffffff !important;
+    background-color: #c71585 !important;
+    border-radius: 6px;
+}
+
+.ckan-logo {
+    height: 60px;
+}
+
+.main {
+    background-color: #ffeef2 !important;
+    background: #ffeef2 !important;
+}
+
+/* Cambiar el color de fondo y texto al hacer hover en los enlaces de la barra de navegación */
+.main-navbar .navbar-nav .nav-link:hover {
+    background-color: #ffeef2;
+    /* Color de fondo rosa pastel */
+    color: #c71585;
+    /* Color de texto rosa fuerte (puedes cambiarlo si lo prefieres) */
+}
+
+/* Asegurarse de que el enlace activo también tenga un buen contraste */
+.main-navbar .navbar-nav .nav-item.active .nav-link {
+    background-color: #c71585;
+    /* Color de fondo rosa fuerte */
+    color: white;
+    /* Color de texto blanco cuando está activo */
+}
+
+/* Cambiar el color del icono en el formulario de búsqueda */
+.main-navbar .site-search button:hover {
+    background-color: #c71585;
+    /* Fondo rosa fuerte al hacer hover */
+    color: white;
+    /* Color blanco en el icono de búsqueda */
 }

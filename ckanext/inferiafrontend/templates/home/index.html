@@ -1,0 +1,46 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _("Bienvenido a Chantwin") }}{% endblock %}
+
+{% block maintag %}{% endblock %}
+{% block toolbar %}{% endblock %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="/css/index.css">
+{% endblock %}
+
+{% block content %}
+<header class="centered-header">
+    <a href="/" title="Inicio">
+        <img src="/images/Logo-300x169.png" alt="Logo Chantwin" class="logo">
+    </a>
+</header>
+
+<section class="hero">
+    <h1>Turismo Inteligente basado en Datos Abiertos</h1>
+    <p>Chantwin facilita el análisis y la toma de decisiones en el sector turístico mediante tecnologías abiertas y
+        datos accesibles.</p>
+</section>
+
+<div class="main-content">
+    <div class="moduleIndex">
+        <h2>Visualización de Datos</h2>
+        <p>Explora gráficas y mapas interactivos sobre el comportamiento turístico en distintas regiones.</p>
+    </div>
+
+    <div class="moduleIndex">
+        <h2>Acceso Abierto</h2>
+        <p>Consulta y descarga datos turísticos actualizados, publicados por entidades colaboradoras.</p>
+    </div>
+
+    <div class="moduleIndex">
+        <h2>Colaboración Institucional</h2>
+        <p>Un proyecto liderado por la Universidad de Alicante junto a instituciones públicas y privadas.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Chantwin - Universidad de Alicante</p>
+</footer>
+{% endblock %}

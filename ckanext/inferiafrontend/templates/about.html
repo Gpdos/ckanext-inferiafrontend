@@ -1,0 +1,42 @@
+{% extends "page.html" %}
+
+{% block subtitle %}Sobre Chantwin{% endblock %}
+
+{% block breadcrumb_content %}
+<li class="active">{% link_for _('Acerca de'), named_route='home.about' %}</li>
+{% endblock %}
+
+{% block primary %}
+<article class="module" role="main">
+    <div class="module-content">
+        <h1 class="page-heading">Sobre Chantwin</h1>
+
+        <p><strong>Chantwin</strong> es una plataforma diseñada para promover el turismo inteligente mediante el uso de
+            tecnologías de datos abiertos. Proporciona acceso a información valiosa sobre el comportamiento turístico y
+            facilita la toma de decisiones basada en evidencias.</p>
+
+        <p>Este proyecto es una iniciativa de la <strong>Universidad de Alicante</strong>, en colaboración con diversas
+            instituciones públicas y privadas, con el objetivo de fomentar un ecosistema turístico sostenible y basado
+            en datos.</p>
+
+        <h2>Objetivos del Proyecto</h2>
+        <ul>
+            <li>Ofrecer herramientas para la visualización y análisis de datos turísticos.</li>
+            <li>Fomentar la transparencia y el acceso a la información del sector.</li>
+            <li>Impulsar la colaboración entre entidades públicas, privadas y académicas.</li>
+        </ul>
+
+        <h2>Tecnología Utilizada</h2>
+        <p>Chantwin está construida sobre tecnologías abiertas como <strong>CKAN</strong> para la gestión de datos
+            abiertos, así como herramientas de visualización e inteligencia artificial para el procesamiento de datos.
+        </p>
+
+        <h2>Contacto</h2>
+        <p>Para más información, puedes contactar a través de <a
+                href="mailto:chantwin@iuii.ua.es">chantwin@iuii.ua.es</a> o visitar la <a
+                href="https://chantwin.iuii.ua.es">página oficial del proyecto</a>.</p>
+    </div>
+</article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}
