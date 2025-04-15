@@ -40,14 +40,14 @@ body {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .hero p {
     font-size: 1.2rem;
     max-width: 800px;
     margin: 0 auto;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* MAIN SECTION */
@@ -79,12 +79,15 @@ body {
     /* rosa fuerte/magenta para contraste */
 }
 
-.module h2 {
+.module h2,
+h1.page-heading {
     margin-bottom: 1rem;
     font-size: 1.3rem;
     color: #c71585;
     /* rosa fuerte/magenta para contraste */
 }
+
+
 
 .module {
     background-color: white;
@@ -97,9 +100,38 @@ body {
 
 /* FOOTER */
 footer {
-    background-color: #c71585;
+    background-color: #fea5ba;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 4rem;
+}
+
+/*Botones*/
+.btn-primary {
+    background-color: #c71585 !important;
+    border-color: #c71585 !important;
+}
+
+.btn-primary:hover {
+    background-color: #a20f6d !important;
+    border-color: #a20f6d !important;
+}
+
+
+/* Al pasar el mouse */
+.navbar-nav li a:hover {
+    color: #fff !important;
+    /* Texto rosa fuerte */
+    background-color: #c71585 !important;
+    /* Fondo claro rosado */
+    text-decoration: none;
+}
+
+/* Cuando está activo o seleccionado */
+.navbar-nav li.active a,
+.navbar-nav li a.active {
+    color: #fff;
+    background-color: #c71585 !important;
+    border-radius: 0.25rem;
 }
