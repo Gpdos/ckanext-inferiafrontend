@@ -135,3 +135,172 @@ footer {
     background-color: #c71585 !important;
     border-radius: 0.25rem;
 }
+
+
+/*MASTHEAD*/
+
+.account-masthead {
+    background-color: #ff1573 !important;
+    /* Rosa claro */
+    padding: 1rem 0;
+}
+
+.account-masthead .avatar.authed ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.account-masthead .avatar.authed li {
+    list-style: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    position: relative;
+}
+
+.account-masthead .avatar.authed li::before {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.account-masthead .avatar.authed a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    color: #c71585;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.account-masthead .avatar.authed a:hover {
+    background-color: #c71585;
+    color: white;
+}
+
+.account-masthead .avatar.authed a .fa,
+.account-masthead .avatar.authed a .user-image {
+    width: 20px;
+    height: 20px;
+}
+
+.account-masthead .avatar.authed .username {
+    font-weight: 600;
+}
+
+.account-masthead .avatar.authed form {
+    margin: 0;
+}
+
+.account-masthead .avatar.authed form button {
+    background-color: transparent;
+    color: #c71585;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.account-masthead .avatar.authed form button:hover {
+    background-color: #c71585;
+    color: white;
+}
+
+.account-masthead .avatar.authed form button {
+    background-color: #fff;
+    color: #c71585;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.account-masthead .avatar.authed form button:hover {
+    background-color: #c71585;
+    color: white;
+}
+
+
+
+/* Estilo general del footer */
+.site-footer {
+    background-color: #ff1573 !important;
+    color: white;
+    padding: 2rem 0;
+    font-size: 0.95rem;
+}
+
+/* Enlaces del footer */
+.site-footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #ffe1f0;
+    text-decoration: underline;
+}
+
+/* Listas */
+.site-footer .footer-links ul {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.site-footer .footer-links ul li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Logo de CKAN */
+.site-footer .ckan-footer-logo {
+    display: inline-block;
+    background: url('/base/images/ckan-logo.png') no-repeat;
+    width: 80px;
+    height: 20px;
+    text-indent: -9999px;
+}
+
+/* Selector de idioma */
+.site-footer .lang-select label {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.site-footer .select2-choice {
+    background-color: white !important;
+    color: #c71585 !important;
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    border: none;
+}
+
+.site-footer .select2-arrow b {
+    border-color: #c71585 transparent transparent transparent !important;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .site-footer .row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
