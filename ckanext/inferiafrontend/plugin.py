@@ -6,16 +6,18 @@ class InferiaFrontendPlugin(SingletonPlugin):
     implements(IConfigurer)
     
     def update_config(self, config):
-        """
-        Configura los archivos estáticos y las plantillas del frontend.
-        """
-        # Ruta de la plantilla y archivos estáticos usando la ubicación del plugin
-        plugin_dir = os.path.dirname(os.path.abspath(__file__))
-        template_path = os.path.join(plugin_dir, 'templates')
-        static_path = os.path.join(plugin_dir, 'public')
+	    """
+	    Configura los archivos estáticos y las plantillas del frontend.
+	    """
+	    plugin_dir = os.path.dirname(os.path.abspath(__file__))
+	    template_path = os.path.join(plugin_dir, 'templates')
+	    static_path = os.path.join(plugin_dir, 'public')
 
-        # Registra el directorio de plantillas
-        config['ckan.plugins.template_dirs'] = template_path
+	    # Añadir en lugar de sobrescribir
+	    config['ckan.plugins.template_dirs'] = (
+	        config.get('ckan.plugins.template_dirs', '') + ':' + template_path
+	    )
+	    config['ckan.plugins.static_dirs'] = (
+	        config.get('ckan.plugins.static_dirs', '') + ':' + static_path
+	    )
 
-        # Registra los recursos estáticos
-        config['ckan.plugins.static_dirs'] = static_path
