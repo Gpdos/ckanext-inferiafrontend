@@ -5,8 +5,15 @@ ckanext/__init__.py
 ckanext/inferiafrontend/plugin.py
 ckanext/inferiafrontend/public/webassets.yaml
 ckanext/inferiafrontend/public/css/custom.css
-ckanext/inferiafrontend/templates/layout.html
+ckanext/inferiafrontend/public/css/index.css
+ckanext/inferiafrontend/public/css/main.css
+ckanext/inferiafrontend/public/images/Logo-300x169.png
+ckanext/inferiafrontend/public/js/custom.js
+ckanext/inferiafrontend/templates/about.html
+ckanext/inferiafrontend/templates/base.html
+ckanext/inferiafrontend/templates/header.html
 ckanext/inferiafrontend/templates/home/index.html
+ckanext/inferiafrontend/templates/home/snippets/about_text.html
 ckanext/inferiafrontend/templates/snippets/footer.html
 ckanext_inferiafrontend.egg-info/PKG-INFO
 ckanext_inferiafrontend.egg-info/SOURCES.txt

@@ -1,7 +1,13 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: ckanext-inferiafrontend
 Version: 0.1
 Summary: Plugin for CKAN to extend frontend functionality.
 Home-page: http://example.com
 Author: Your Name
 Author-email: your_email@example.com
+Requires-Dist: ckan>=2.9
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
